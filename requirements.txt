@@ -1,5 +1,7 @@
-streamlit==1.44.0
+streamlit==1.15.0
 pandas==1.5.2
 matplotlib==3.10.1
 mplsoccer==1.4.0
 understatapi==0.6.1
+requests==2.25.1
+
