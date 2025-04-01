@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import understatapi
+import altair as alt
 
 st.title("player_shot_stats")
 
