@@ -287,7 +287,7 @@ def app():
                 ax_stats1 = fig.add_axes([0, .2, 1, .05])
                 ax_stats1.set_facecolor(background_color)
                 ax_stats1.set_xticks([])
-                x_stats1.set_yticks([])
+                ax_stats1.set_yticks([])
                 ax_stats1.set_frame_on(False)
                 ax_stats1.text(.05, 4, 'シュート数', fontsize=20, fontproperties=font_prop, fontweight='bold', color='white', ha='left')
                 ax_stats1.text(.11, 3.5, f'{total_shots_1}', fontsize=16, fontproperties=font_prop, color='red', ha='left')
