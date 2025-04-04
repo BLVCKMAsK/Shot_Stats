@@ -19,7 +19,7 @@ def app():
     
         from matplotlib import font_manager
 
-        font_path = Path(__file__).parent / "fonts" / "NotoSansJP-Regular.otf"
+        font_path = Path(os.getcwd()) / "demo" / "fonts" / "NotoSansJP-Regular.otf"
         font_prop = font_manager.FontProperties(fname=str(font_path))
     
         # タイトルと説明
