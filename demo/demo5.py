@@ -390,7 +390,7 @@ def app():
         player_id = st.sidebar.text_input("選手IDを入力",placeholder = "例: 1234", key='id_csv_desktop')
         season = st.sidebar.selectbox("シーズンを選択",["2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014"], key='season_csv_desktop')
     
-        if st.sidebar.button("スタッツを取得", btn_3_desktop):
+        if st.sidebar.button("スタッツを取得", key='btn_3_desktop'):
             try:
                 client = understatapi.UnderstatClient()
                 player_data = client.player(player = player_id).get_shot_data()
