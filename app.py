@@ -9,12 +9,12 @@ from demo.demo5 import app as demo5_app
 
 selected = option_menu(
     menu_title=None,
-    options=["Desktop", "Mobile"],
-    icons=["laptop", "phone"],
+    options=["Mobile", "Desktop"],
+    icons=["phone", "laptop"],
     orientation="horizontal"
 )
 
-if selected == "Desktop":
+if selected == "Mobile":
     demo4_app()
-elif selected == "Mobile":
+elif selected == "Desktop":
     demo5_app()
