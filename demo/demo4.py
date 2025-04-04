@@ -17,10 +17,12 @@ def app():
         # スタイル設定
         background_color = "#0C0D0E"
     
+        from pathlib import Path
         from matplotlib import font_manager
 
-        font_path = Path(os.getcwd()) / "demo" / "fonts" / "NotoSansJP-Regular.otf"
+        font_path = Path(__file__).parent / "fonts" / "NotoSansJP-Regular.otf"
         font_prop = font_manager.FontProperties(fname=str(font_path))
+
     
         # タイトルと説明
         st.title("シュートマップ作成")

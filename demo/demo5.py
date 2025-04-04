@@ -21,8 +21,7 @@ def app():
 
         font_path = Path(__file__).parent / "fonts" / "NotoSansJP-Regular.otf"
         font_prop = font_manager.FontProperties(fname=str(font_path))
-
-    
+        
         # タイトルと説明
         st.title("シュートマップ作成")
         with st.expander("ツールについて"):
