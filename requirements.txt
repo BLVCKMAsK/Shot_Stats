@@ -7,5 +7,6 @@ understatapi==0.6.1
 requests==2.25.1
 altair==4.1.0
 pyarrow
+streamlit-option-menu
 
 
