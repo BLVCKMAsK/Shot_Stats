@@ -18,8 +18,8 @@ def app():
     
         from matplotlib import font_manager
 
-        font_path = "fonts/NotoSansJP-Regular.otf"
-        font_prop = font_manager.FontProperties(fname=font_path)
+        font_path = Path(__file__).parent / "fonts" / "NotoSansJP-Regular.otf"
+        font_prop = font_manager.FontProperties(fname=str(font_path))
     
         # タイトルと説明
         st.title("シュートマップ作成")
