@@ -328,7 +328,7 @@ def app():
                 ax_pitch2.set_frame_on(False)
                 ax_pitch2.scatter(90, dist_points_2, s=100, color='white', linewidth=.8)
                 ax_pitch2.plot([90, 90], [100, dist_points_2], color='white', linewidth=2)
-                ax_pitch2.text(90, dist_points_2 - 4, f"平均シュート距離\n{actual_avg_dist_2:.1f} M", fontsize=10, fontname='Robot', color='white', ha='center')
+                ax_pitch2.text(90, dist_points_2 - 4, f"平均シュート距離\n{actual_avg_dist_2:.1f} M", fontsize=10, fontproperties=font_prop, color='white', ha='center')
             
                 ax_stats2 = fig.add_axes([0, .0, 1, .05])
                 ax_stats2.set_facecolor(background_color)
